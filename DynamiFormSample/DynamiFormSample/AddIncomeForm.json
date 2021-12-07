@@ -1,0 +1,165 @@
+{
+   "formFieldSections":[
+      {
+          "title": "Amount",
+          "displaySequence": 0,
+          "fields": [
+              {
+                  "title": "Amount",
+                  "placeholder": "$0.00",
+                  "attributeName": "amount",
+                  "displaySequence": 0,
+                  "regex": "^(?:|0|[1-9]\\d*)(?:\\.\\d*)?$",
+                  "regexValidationMessage": "Please enter valid input for amount",
+                  "type": "number",
+                  "isEditable": true,
+                  "isMandatory": true,
+                  "validationMessage": "Please enter amount",
+                  "parentField": null
+              }
+          ]
+      },
+      {
+          "title": "Vendor",
+          "displaySequence": 1,
+          "fields": [
+              {
+                  "title": "Vendor",
+                  "placeholder": "Vendor Name",
+                  "attributeName": "vendor",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "regular",
+                  "isEditable": true,
+                  "isMandatory": false,
+                  "validationMessage": "Please enter vendor name",
+                  "parentField": null
+              }
+          ]
+      },
+      {
+          "title": "Business Category",
+          "displaySequence": 2,
+          "fields": [
+              {
+                  "title": "Business Category",
+                  "placeholder": "Select",
+                  "attributeName": "businessCategory",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "edit",
+                  "isEditable": true,
+                  "isMandatory": true,
+                  "validationMessage": "Please select business category",
+                  "parentField": null
+              }
+          ]
+      },
+      {
+          "title": "Business",
+          "displaySequence": 2,
+          "fields": [
+              {
+                  "title": "Business",
+                  "placeholder": "Select",
+                  "attributeName": "business",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "popup",
+                  "isEditable": true,
+                  "isMandatory": true,
+                  "validationMessage": "Please select business",
+                  "parentField": null
+              }
+          ]
+      },
+      {
+          "title": "Client",
+          "displaySequence": 3,
+          "fields": [
+              {
+                  "title": "Client",
+                  "placeholder": "Select",
+                  "attributeName": "client",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "popup",
+                  "isEditable": true,
+                  "isMandatory": true,
+                  "validationMessage": "Please select client",
+                  "parentField": "business"
+              }
+          ]
+      },
+      {
+          "title": "Transaction Info",
+          "displaySequence": 4,
+          "fields": [
+              {
+                  "title": "Type",
+                  "placeholder": "Transaction Type",
+                  "attributeName": "transactionType",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "dropdown",
+                  "isAccessoryField": true,
+                  "isEditable": true,
+                  "isMandatory": true,
+                  "validationMessage": "Please select transaction type",
+                  "parentField": null
+              }
+          ]
+      },
+      {
+          "title": "Merchant Info",
+          "displaySequence": 5,
+          "fields": [
+              {
+                  "title": "U.S. Bank, 800 Nicollet Mall, Minneapolis, MN 55402",
+                  "placeholder": "U.S. Bank, 800 Nicollet Mall, Minneapolis, MN 55402",
+                  "attributeName": "address",
+                  "displaySequence": 0,
+                  "regex": null,
+                  "type": "map",
+                  "isAccessoryField": false,
+                  "isEditable": true,
+                  "isMandatory": false,
+                  "validationMessage": null,
+                  "parentField": null
+              },
+              {
+                  "title": "https://www.usbank.com/index.html",
+                  "placeholder": "https://www.usbank.com/index.html",
+                  "attributeName": "website",
+                  "displaySequence": 2,
+                  "regex": null,
+                  "type": "website",
+                  "isAccessoryField": false,
+                  "isEditable": true,
+                  "isMandatory": false,
+                  "validationMessage": null,
+                  "parentField": null
+              },
+              {
+                  "title": "01234567890",
+                  "placeholder": "01234567890",
+                  "attributeName": "phone",
+                  "displaySequence": 1,
+                  "regex": null,
+                  "type": "call",
+                  "isAccessoryField": false,
+                  "isEditable": true,
+                  "isMandatory": false,
+                  "validationMessage": null,
+                  "parentField": null
+              }
+          ]
+      }
+    ],
+   "fieldValues":{
+       "businessCategory": "Software",
+       "address": "U.S. Bank, 800 Nicollet Mall, Minneapolis, MN 55402",
+       "phone": "1234567890",
+       "website": "https://www.usbank.com/index.html"
+   }
+}
