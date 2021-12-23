@@ -1,4 +1,4 @@
-# Gigi-iOS Project Documentation
+# Gigi-iOS Project
 
 
 
